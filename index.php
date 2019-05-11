@@ -15,6 +15,9 @@ $title = explode('Компьютерная игра',$title);
 foreach ($title as $game) {
     $money = '';
     $echo = str_replace("Добавить в корзину"," ",$game);
+    $echo = str_replace("Платёж в месяц","",$echo);
+  $echo = str_replace(",",".",$echo);
+  $echo = str_replace(' €',"",$echo);
     echo $echo;
   }
 
