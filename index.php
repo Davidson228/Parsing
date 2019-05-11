@@ -12,6 +12,11 @@ phpQuery::newDocument($html);
 $title = pq('#products-grid-table')->text();
 $title = explode('Компьютерная игра',$title);
 
+foreach ($title as $game) {
+    $money = '';
+    $echo = str_replace("Добавить в корзину"," ",$game);
+    
+
 var_dump($title);
 
 
