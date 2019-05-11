@@ -27,7 +27,7 @@ foreach ($title as $game) {
            break;
          }
      }
-    echo $echo;
+    echo $money;
   }
 }
 
