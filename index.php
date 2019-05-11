@@ -18,8 +18,18 @@ foreach ($title as $game) {
     $echo = str_replace("Платёж в месяц","",$echo);
   $echo = str_replace(",",".",$echo);
   $echo = str_replace(' €',"",$echo);
+  if ($echo !== " ") {
+     for ($i = strlen($echo); $i >= 0; $i--){
+         if (is_numeric($echo[$i]) OR $echo[$i]=='.') {
+           $money = $echo[$i].$money;
+         }
+         if ((10<$money and $money<100) AND $echo[$i-1] !== '.') {
+           break;
+         }
+     }
     echo $echo;
   }
+}
 
 //var_dump($title);
 
