@@ -12,7 +12,7 @@ phpQuery::newDocument($html);
 $title = pq('#products-grid-table')->text();
 //$title = explode('Компьютерная игра',$title);
 
-var_dumb($title);
+var_dump($title);
 
 
 
