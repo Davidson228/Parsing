@@ -9,7 +9,10 @@ $html = file_get_contents('https://www.elkor.lv/rus/elektronika-1/speles/datorsp
 
 phpQuery::newDocument($html);
 
+$title = pq('#products-grid-table')->text();
+//$title = explode('Компьютерная игра',$title);
 
+var_dumb($title);
 
 
 
