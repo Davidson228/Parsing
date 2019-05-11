@@ -32,7 +32,7 @@ foreach ($title as $game) {
      $app->add(['Label',$echo,'big blue']);
      $app->add(['Label',$money.' €','small violet']);
      $app->add(['ui'=>"hidden divider"]);
-    echo $money;
+    //echo $money;
   }
 }
 
