@@ -34,9 +34,9 @@ foreach ($title as $game) {
      $app->add(['ui'=>"hidden divider"]);
 
      $da = new Da($db);
-     $form = $app->layout->add('Form');
+  /*   $form = $app->layout->add('Form');
 $form->setModel( new Da($db),['name','price']);
-$form->buttonSave->set('Save');
+$form->buttonSave->set('Save');*/
 
   }
 }
