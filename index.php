@@ -32,11 +32,16 @@ foreach ($title as $game) {
      $app->add(['Label',$echo,'big blue']);
      $app->add(['Label',$money.' €','small violet']);
      $app->add(['ui'=>"hidden divider"]);
-    //echo $money;
+
+     $da = new Da($db);
+     $form = $app->layout->add('Form');
+$form->setModel( new Da($db),['name','price']);
+$form->buttonSave->set('Save');
+
   }
 }
 
-//var_dump($title);
+
 
 
 
